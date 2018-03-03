@@ -11,7 +11,8 @@ html
 body
 	padding: 0
 	margin: 0
-	
+*:visited, *:active
+	outline: none	
 
 .btn
 	font-size: 2.2rem
@@ -61,7 +62,18 @@ body
 			text-align: center
 			font-size: 1.8rem
 			font-family: 'regular'
-
+	textarea
+		width: 37rem
+		height: 13rem
+		font-size: 2rem
+		border: 2px solid #827645
+		margin-bottom: 2.7rem
+		background-color:  rgba(255, 255, 255, 0.8)
+		&::placeholder
+			color: $black
+			text-align: center
+			font-size: 2rem
+			font-family: 'regular'
 	button
 		margin-top: 1rem
 .yellow-line
@@ -76,8 +88,35 @@ body
 
 .bg-2
 	position: absolute
-	top: 280rem
+	top: 240rem
 	width: 100%
+	height: 976rem
+
+.arrow 
+	position: absolute
+	z-index: 99
+	top: 50%
+	border: none
+	width: 6rem
+	height: 6rem
+	background-color: #000
+	&:focus
+		outline: none
+.prev 
+	left: -10rem
+	background: url(../img/left-arrow.png) center no-repeat
+	background-size: 100%
+	z-index: 99
+
+.next 
+	right: -10rem
+	background: url(../img/right-arrow.png) center no-repeat
+	background-size: 100%
+	z-index: 1000
+
+.clear
+	content: ''
+	clear: both
 // Основные стили
 .main
 	position: relative
@@ -227,7 +266,7 @@ body
 
 .get_catalog
 	padding-top: 7rem
-	padding-bottom: 10rem
+	padding-bottom: 7rem
 	background-color: $black
 	.container
 		padding: 0
@@ -240,6 +279,7 @@ body
 		background-size: 100% 100%
 		margin-top: 10rem
 	&-inform
+		position: relative
 		background:  url(../img/get_catalog-inform.png) center no-repeat
 		background-size: 100%
 		color: $white
@@ -257,3 +297,256 @@ body
 		font-family: 'souven'
 		font-size: 4rem
 		color: $black
+
+.advantage
+	position: relative
+	margin-top: 7rem
+	position: relative
+	width: 100%
+	height: 100rem
+	.block
+		position: absolute
+		font-size: 2rem
+		color: $black
+		text-align: right
+		div
+			position: relative
+			top: -25rem
+			left: 24rem
+			height: 10rem
+			width: 30rem
+	.block-1
+		top: 15rem
+		left: 35%
+	.block-2
+		top: 31rem
+		left: 43.5%
+	.block-3
+		top: 47rem
+		left: 52%
+	.block-4
+		top: 62rem
+		left: 60%
+	&-caption
+		color: $black
+		font-family: 'souven'
+		font-weight: 400
+		font-size: 4rem
+		text-align: center
+
+.work
+	position: relative
+	margin-top: 10rem
+	text-align: center
+	.btn
+		margin-top: 4rem
+	&-caption
+		font-family: 'souven'
+		font-size: 4rem
+		text-transform: uppercase
+		color: $white
+		text-align: center
+		text-shadow: 2px 3px 5px rgba(35, 31, 32, 0.65)
+	.fotorama
+		display: inline-block
+		margin: auto
+		&-wrap
+			position: relative
+			display: inline-block
+			width: 100% 
+
+.call
+	position: relative
+	margin-top: 10rem
+	.form
+		margin-top: 10rem
+	&-text
+		text-align: center
+		font-size: 2.4rem
+		font-family: 'light'
+		font-weight: 300
+		color: $white
+		background:  url(../img/call-text.png) center no-repeat
+		background-size: 100% 100%
+		padding: 3rem 
+		b
+			font-family: 'bold'
+			font-size: 2.8rem
+
+.about
+	margin-top: 20rem
+	position: relative
+	&-block
+		margin-top: 6rem
+		width: 25rem
+		height: 30rem
+	&-text
+		display: inline-block
+		text-align: center
+		font-size: 2.8rem
+		font-family: 'uni'
+		font-weight: 400
+		width: 100%
+	&-img
+		display: inline-block
+		width: 100%
+	&-caption
+		text-align: left
+		text-transform: uppercase
+		font-family: 'souven'
+		font-weight: 400
+		font-size: 4rem
+
+		span
+			margin-left: 24rem
+
+.thanks
+	position: relative
+	margin-top: 13rem
+	&-slider
+		width: 80%
+		height: 30rem
+		margin: auto
+		margin-top: 9rem
+	&-caption
+		font-size: 4rem
+		font-weight: 400
+		font-family: 'souven'
+		text-transform: uppercase
+		text-align: center
+	&-block
+		&:focus
+			outline: none
+	&-img
+		float: left
+		position: relative
+		display: inline-block
+		margin-top: 2rem
+		max-width: 27rem
+		border-radius: 50%
+	&-name
+		float: left
+		display: inline-block
+		font-size: 3rem
+		font-family: 'uni'
+		color: $black
+		font-weight: 700
+		margin-bottom: 2rem
+		margin-left: 2rem	
+	&-rew
+		float: right
+		display: inline-block
+		font-size: 2rem
+		font-family: 'light'
+		color: $black
+		font-weight: 300
+		background:  url(../img/rew-block.png)center no-repeat
+		background-size: 100% 100%
+		padding: 2rem
+		height: 27rem
+		width: 60rem
+
+.step
+	margin-top: 14rem
+	position: relative
+	&-arrow
+		position: absolute
+		top: 50%
+		left: 40%
+		width: 6rem
+		&-row2
+			left: 55%
+	&-block
+		width: 19rem
+		height: 35rem
+		&-arrow
+			width: 100%
+			height: 13rem
+			position: relative
+		&-text
+			color: $white
+			font-size: 1.7rem
+			font-family: 'uni'
+			text-align: center
+			font-weight: 400
+		&-img
+			width: 18rem
+	&-caption
+		text-align: center
+		font-size: 4rem
+		color: $white
+		font-family: 'souven'
+		font-weight: 400
+		text-transform: uppercase
+		text-shadow: 2px 3px 5px rgba(35, 31, 32, 0.65)
+		margin-bottom: 11rem
+
+.sertificate
+	position: relative
+	margin-top: 10rem
+	.container
+		padding: 0
+	&-block
+		width: 100%
+		height: 55rem
+		background-color: rgba(255, 255, 255, 0.2)
+		padding: 5rem 0
+	&-img
+		display: inline-block
+		padding: 7px
+		border: 4px solid #c0c0c0
+		width: 33rem
+		position: absolute
+		left: 50%	
+		transform: translateX(-50%)
+	&-caption
+		text-transform: uppercase
+		text-align: center
+		color: $white
+		font-family: 'souven'
+		font-weight: 400
+		font-size: 4rem
+		margin-bottom: 4rem
+
+.contact
+	position: relative
+	&-numbers
+		margin-bottom: 4rem
+	&-adress
+		margin-top: 5rem
+	&-caption
+		font-family: 'souven'
+		font-size: 4rem
+		color: $white
+		text-transform: uppercase
+		text-align: center
+		margin-top: 12rem
+	&-block
+		background:  url(../img/contact-block.png) center no-repeat
+		background-size: 100% 100%
+		padding: 4rem 9rem
+		font-size: 2.4rem
+
+.question
+	position: relative
+	&-caption
+		margin-top: 6rem
+		margin-bottom: 4rem
+		font-size: 4rem
+		text-align: center
+	
+	&-form
+		padding: 7rem 10rem
+		background: url(../img/question-form.png) center center no-repeat
+		height: 46rem
+		input
+			border: 2px solid #827645
+			font-size: 2rem
+			width: 37rem
+			height: 4rem
+			margin-bottom: 1.6rem
+	.copyright
+		margin-top: 5rem
+		text-align: center
+		font-size: 2rem
+		font-family: 'light'

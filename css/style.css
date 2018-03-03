@@ -10,6 +10,8 @@ html { font-size: 10px; font-family: "regular"; }
 
 body { padding: 0; margin: 0; }
 
+*:visited, *:active { outline: none; }
+
 .btn { font-size: 2.2rem; font-family: "light"; color: white; padding: 1rem 4rem; background-image: url(../img/btn.png); background-size: 100% 100%; border: none; -webkit-box-shadow: 2px 3px 4px 0px rgba(35, 31, 32, 0.65); box-shadow: 2px 3px 4px 0px rgba(35, 31, 32, 0.65); text-shadow: 1px 2px 1px rgba(35, 31, 32, 0.4); cursor: pointer; }
 
 .form { padding: 2rem 3rem; text-align: center; background: url(../img/main-adv-form.png) center center no-repeat; background-size: 100% 100%; height: 26rem; }
@@ -19,13 +21,27 @@ body { padding: 0; margin: 0; }
 .form input:-ms-input-placeholder { color: #181818; text-align: center; font-size: 1.8rem; font-family: "regular"; }
 .form input::-ms-input-placeholder { color: #181818; text-align: center; font-size: 1.8rem; font-family: "regular"; }
 .form input::placeholder { color: #181818; text-align: center; font-size: 1.8rem; font-family: "regular"; }
+.form textarea { width: 37rem; height: 13rem; font-size: 2rem; border: 2px solid #827645; margin-bottom: 2.7rem; background-color: rgba(255, 255, 255, 0.8); }
+.form textarea::-webkit-input-placeholder { color: #181818; text-align: center; font-size: 2rem; font-family: "regular"; }
+.form textarea:-ms-input-placeholder { color: #181818; text-align: center; font-size: 2rem; font-family: "regular"; }
+.form textarea::-ms-input-placeholder { color: #181818; text-align: center; font-size: 2rem; font-family: "regular"; }
+.form textarea::placeholder { color: #181818; text-align: center; font-size: 2rem; font-family: "regular"; }
 .form button { margin-top: 1rem; }
 
 .yellow-line { background-color: #e9d761; height: 1px; width: 100%; margin-top: 3rem; }
 
 .bg-1 { position: absolute; top: 0; right: 0; }
 
-.bg-2 { position: absolute; top: 280rem; width: 100%; }
+.bg-2 { position: absolute; top: 240rem; width: 100%; height: 976rem; }
+
+.arrow { position: absolute; z-index: 99; top: 50%; border: none; width: 6rem; height: 6rem; background-color: #000; }
+.arrow:focus { outline: none; }
+
+.prev { left: -10rem; background: url(../img/left-arrow.png) center no-repeat; background-size: 100%; z-index: 99; }
+
+.next { right: -10rem; background: url(../img/right-arrow.png) center no-repeat; background-size: 100%; z-index: 1000; }
+
+.clear { content: ""; clear: both; }
 
 .main { position: relative; z-index: 11; padding-top: 2rem; background: url(../img/main-doors.png) top no-repeat; background-size: 130rem 90%; padding-bottom: 3rem; }
 .main-wrap { position: relative; background-color: #111111; }
@@ -50,11 +66,73 @@ body { padding: 0; margin: 0; }
 .catalog-caption-standart::before { content: ""; display: inline-block; height: 1px; width: 2rem; background-color: #e9d761; -webkit-transform: translateY(-0.7rem); transform: translateY(-0.7rem); margin-right: 1rem; }
 .catalog-caption-standart::after { content: ""; display: inline-block; height: 1px; width: 2rem; background-color: #e9d761; -webkit-transform: translateY(-0.7rem); transform: translateY(-0.7rem); margin-left: 1rem; }
 
-.get_catalog { padding-top: 7rem; padding-bottom: 10rem; background-color: #181818; }
+.get_catalog { padding-top: 7rem; padding-bottom: 7rem; background-color: #181818; }
 .get_catalog .container { padding: 0; }
 .get_catalog-book { position: relative; left: -14%; z-index: 10; }
 .get_catalog-form { background: url(../img/get_catalog-form.png) center center no-repeat; background-size: 100% 100%; margin-top: 10rem; }
-.get_catalog-inform { background: url(../img/get_catalog-inform.png) center no-repeat; background-size: 100%; color: white; font-size: 2.3rem; text-align: center; padding: 5rem 10rem; font-family: "light"; font-weight: 300; }
+.get_catalog-inform { position: relative; background: url(../img/get_catalog-inform.png) center no-repeat; background-size: 100%; color: white; font-size: 2.3rem; text-align: center; padding: 5rem 10rem; font-family: "light"; font-weight: 300; }
 
 .video { position: relative; }
 .video-caption { margin: 0 0 4rem 0; text-align: center; font-family: "souven"; font-size: 4rem; color: #181818; }
+
+.advantage { position: relative; margin-top: 7rem; position: relative; width: 100%; height: 100rem; }
+.advantage .block { position: absolute; font-size: 2rem; color: #181818; text-align: right; }
+.advantage .block div { position: relative; top: -25rem; left: 24rem; height: 10rem; width: 30rem; }
+.advantage .block-1 { top: 15rem; left: 35%; }
+.advantage .block-2 { top: 31rem; left: 43.5%; }
+.advantage .block-3 { top: 47rem; left: 52%; }
+.advantage .block-4 { top: 62rem; left: 60%; }
+.advantage-caption { color: #181818; font-family: "souven"; font-weight: 400; font-size: 4rem; text-align: center; }
+
+.work { position: relative; margin-top: 10rem; text-align: center; }
+.work .btn { margin-top: 4rem; }
+.work-caption { font-family: "souven"; font-size: 4rem; text-transform: uppercase; color: white; text-align: center; text-shadow: 2px 3px 5px rgba(35, 31, 32, 0.65); }
+.work .fotorama { display: inline-block; margin: auto; }
+.work .fotorama-wrap { position: relative; display: inline-block; width: 100%; }
+
+.call { position: relative; margin-top: 10rem; }
+.call .form { margin-top: 10rem; }
+.call-text { text-align: center; font-size: 2.4rem; font-family: "light"; font-weight: 300; color: white; background: url(../img/call-text.png) center no-repeat; background-size: 100% 100%; padding: 3rem; }
+.call-text b { font-family: "bold"; font-size: 2.8rem; }
+
+.about { margin-top: 20rem; position: relative; }
+.about-block { margin-top: 6rem; width: 25rem; height: 30rem; }
+.about-text { display: inline-block; text-align: center; font-size: 2.8rem; font-family: "uni"; font-weight: 400; width: 100%; }
+.about-img { display: inline-block; width: 100%; }
+.about-caption { text-align: left; text-transform: uppercase; font-family: "souven"; font-weight: 400; font-size: 4rem; }
+.about-caption span { margin-left: 24rem; }
+
+.thanks { position: relative; margin-top: 13rem; }
+.thanks-slider { width: 80%; height: 30rem; margin: auto; margin-top: 9rem; }
+.thanks-caption { font-size: 4rem; font-weight: 400; font-family: "souven"; text-transform: uppercase; text-align: center; }
+.thanks-block:focus { outline: none; }
+.thanks-img { float: left; position: relative; display: inline-block; margin-top: 2rem; max-width: 27rem; border-radius: 50%; }
+.thanks-name { float: left; display: inline-block; font-size: 3rem; font-family: "uni"; color: #181818; font-weight: 700; margin-bottom: 2rem; margin-left: 2rem; }
+.thanks-rew { float: right; display: inline-block; font-size: 2rem; font-family: "light"; color: #181818; font-weight: 300; background: url(../img/rew-block.png) center no-repeat; background-size: 100% 100%; padding: 2rem; height: 27rem; width: 60rem; }
+
+.step { margin-top: 14rem; position: relative; }
+.step-arrow { position: absolute; top: 50%; left: 40%; width: 6rem; }
+.step-arrow-row2 { left: 55%; }
+.step-block { width: 19rem; height: 35rem; }
+.step-block-arrow { width: 100%; height: 13rem; position: relative; }
+.step-block-text { color: white; font-size: 1.7rem; font-family: "uni"; text-align: center; font-weight: 400; }
+.step-block-img { width: 18rem; }
+.step-caption { text-align: center; font-size: 4rem; color: white; font-family: "souven"; font-weight: 400; text-transform: uppercase; text-shadow: 2px 3px 5px rgba(35, 31, 32, 0.65); margin-bottom: 11rem; }
+
+.sertificate { position: relative; margin-top: 10rem; }
+.sertificate .container { padding: 0; }
+.sertificate-block { width: 100%; height: 55rem; background-color: rgba(255, 255, 255, 0.2); padding: 5rem 0; }
+.sertificate-img { display: inline-block; padding: 7px; border: 4px solid #c0c0c0; width: 33rem; position: absolute; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.sertificate-caption { text-transform: uppercase; text-align: center; color: white; font-family: "souven"; font-weight: 400; font-size: 4rem; margin-bottom: 4rem; }
+
+.contact { position: relative; }
+.contact-numbers { margin-bottom: 4rem; }
+.contact-adress { margin-top: 5rem; }
+.contact-caption { font-family: "souven"; font-size: 4rem; color: white; text-transform: uppercase; text-align: center; margin-top: 12rem; }
+.contact-block { background: url(../img/contact-block.png) center no-repeat; background-size: 100% 100%; padding: 4rem 9rem; font-size: 2.4rem; }
+
+.question { position: relative; }
+.question-caption { margin-top: 6rem; margin-bottom: 4rem; font-size: 4rem; text-align: center; }
+.question-form { padding: 7rem 10rem; background: url(../img/question-form.png) center center no-repeat; height: 46rem; }
+.question-form input { border: 2px solid #827645; font-size: 2rem; width: 37rem; height: 4rem; margin-bottom: 1.6rem; }
+.question .copyright { margin-top: 5rem; text-align: center; font-size: 2rem; font-family: "light"; }
