@@ -1,11 +1,11 @@
-@font-face { font-family: 'souven'; src: url(../fonts/Souvenir.ttf); }
-@font-face { font-family: 'bold'; src: url(../fonts/Ubuntu-Bold.ttf); }
-@font-face { font-family: 'bold-i'; src: url(../fonts/Ubuntu-BoldItalic.ttf); }
-@font-face { font-family: 'light'; src: url(../fonts/Ubuntu-Light.ttf); }
+@font-face { font-family: 'souven'; src: url(../fonts/Souvenir.ttf); src: url(../fonts/Souvenir.otf); src: url(../fonts/Souvenir.eot); src: url(../fonts/Souvenir.woff); }
+@font-face { font-family: 'bold'; src: url(../fonts/Ubuntu-Bold.ttf); src: url(../fonts/Ubuntu-Bold.otf); src: url(../fonts/Ubuntu-Bold.eot); src: url(../fonts/Ubuntu-Bold.woff); }
+@font-face { font-family: 'bold-i'; src: url(../fonts/Ubuntu-BoldItalic.ttf); src: url(../fonts/Ubuntu-BoldItalic.otf); src: url(../fonts/Ubuntu-BoldItalic.eot); src: url(../fonts/Ubuntu-BoldItalic.woff); }
+@font-face { font-family: 'light'; src: url(../fonts/Ubuntu-Light.ttf); src: url(../fonts/Ubuntu-Light.eot); src: url(../fonts/Ubuntu-Light.otf); src: url(../fonts/Ubuntu-Light.woff); }
 @font-face { font-family: 'light-i'; src: url(../fonts/Ubuntu-LI-hinting.ttf); }
-@font-face { font-family: 'regular'; src: url(../fonts/Ubuntu-R-hinting.ttf); }
+@font-face { font-family: 'regular'; src: url(../fonts/Ubuntu-R.ttf); src: url(../fonts/Ubuntu-R.eot); src: url(../fonts/Ubuntu-R.woff); src: url(../fonts/Ubuntu-R.otf); }
 @font-face { font-family: 'medium'; src: url(../fonts/Ubuntu-M-hinting.ttf); }
-@font-face { font-family: 'uni'; src: url(../fonts/UniNeue-Light.otf); }
+@font-face { font-family: 'uni'; src: url(../fonts/UniNeue-Light.otf); src: url(../fonts/UniNeue-Light.ttf); src: url(../fonts/UniNeue-Light.eot); src: url(../fonts/UniNeue-Light.woff); }
 html { font-size: 10px; font-family: "regular"; }
 
 body { padding: 0; margin: 0; }
@@ -25,17 +25,17 @@ body { padding: 0; margin: 0; }
 
 .bg-1 { position: absolute; top: 0; right: 0; }
 
-.bg-2 { position: absolute; top: 280rem; }
+.bg-2 { position: absolute; top: 280rem; width: 100%; }
 
-.main { position: relative; z-index: 11; padding-top: 2rem; background: url(../img/main-doors.png) top no-repeat; padding-bottom: 3rem; }
+.main { position: relative; z-index: 11; padding-top: 2rem; background: url(../img/main-doors.png) top no-repeat; background-size: 90% 90%; padding-bottom: 3rem; }
 .main-wrap { position: relative; background-color: #111111; }
-.main-advantage { color: rgba(255, 255, 255, 0.9); font-size: 2rem; margin-top: 28rem; }
+.main-advantage { color: rgba(255, 255, 255, 0.9); font-size: 2rem; margin-top: 18rem; }
 .main-advantage-paragraph { background: url(../img/main-advantage-paragraph.png) center no-repeat; background-size: 100% 100%; padding: 0.5rem; padding-bottom: 1rem; font-family: "light"; font-size: 1.9rem; height: 31rem; }
 .main-advantage-paragraph ul { list-style: none; text-shadow: 2px 3px 3px rgba(35, 31, 32, 0.3); }
 .main-advantage-paragraph ul li { position: relative; padding-left: 3rem; margin-bottom: 2rem; }
 .main-advantage-paragraph ul li::before { position: absolute; left: -2rem; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); display: block; content: ""; width: 3.5rem; height: 3.5rem; background-image: url(../img/ok.png); background-position: center center; background-repeat: no-repeat; margin-right: 2rem; }
-.main-caption { font-family: "souven"; color: rgba(255, 255, 255, 0.9); text-transform: uppercase; font-size: 3.8rem; font-weight: 400; line-height: 1.842; text-align: center; text-shadow: 2px 3px 5px rgba(35, 31, 32, 0.8); margin: 1rem 3rem; }
-.main-caption-block { margin-top: 30rem; background-image: url(../img/main-caption-block.png); background-size: cover; }
+.main-caption { font-family: "souven"; color: rgba(255, 255, 255, 0.9); text-transform: uppercase; font-size: 3.6rem; font-weight: 400; line-height: 1.842; text-align: center; text-shadow: 2px 3px 5px rgba(35, 31, 32, 0.8); padding: 1.5rem 3rem; }
+.main-caption-block { margin-top: 20rem; background-image: url(../img/main-caption-block.png); background-size: cover; }
 .main-number { display: inline-block; font-size: 2.2rem; font-family: "light"; margin-right: 2rem; }
 
 .catalog { margin: 0; padding: 0; background-color: #111111; }

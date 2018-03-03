@@ -1,23 +1,36 @@
 // Fonts
 @font-face {
-     font-family: 'souven'; 
+    font-family: 'souven'; 
     src: url(../fonts/Souvenir.ttf);
+    src: url(../fonts/Souvenir.otf);
+    src: url(../fonts/Souvenir.eot);
+    src: url(../fonts/Souvenir.woff);
 }
+
 
 @font-face {
     font-family: 'bold'; 
     src: url(../fonts/Ubuntu-Bold.ttf);
+    src: url(../fonts/Ubuntu-Bold.otf);
+    src: url(../fonts/Ubuntu-Bold.eot);
+    src: url(../fonts/Ubuntu-Bold.woff);
 }
     
 
 @font-face {
     font-family: 'bold-i'; 
     src: url(../fonts/Ubuntu-BoldItalic.ttf);
+    src: url(../fonts/Ubuntu-BoldItalic.otf);
+    src: url(../fonts/Ubuntu-BoldItalic.eot);
+    src: url(../fonts/Ubuntu-BoldItalic.woff);
 }
     
 @font-face {
     font-family: 'light'; 
     src: url(../fonts/Ubuntu-Light.ttf);
+    src: url(../fonts/Ubuntu-Light.eot);
+    src: url(../fonts/Ubuntu-Light.otf);
+    src: url(../fonts/Ubuntu-Light.woff);
 }
     
 @font-face {
@@ -27,17 +40,23 @@
     
 @font-face {
     font-family: 'regular'; 
-    src: url(../fonts/Ubuntu-R-hinting.ttf);
+    src: url(../fonts/Ubuntu-R.ttf);
+    src: url(../fonts/Ubuntu-R.eot);
+    src: url(../fonts/Ubuntu-R.woff);
+    src: url(../fonts/Ubuntu-R.otf);
 }
    
 @font-face {
-     font-family: 'medium'; 
+     font-family: 'medium';
     src: url(../fonts/Ubuntu-M-hinting.ttf);
 }
 
 @font-face {
      font-family: 'uni'; 
     src: url(../fonts/UniNeue-Light.otf);
+    src: url(../fonts/UniNeue-Light.ttf);
+    src: url(../fonts/UniNeue-Light.eot);
+    src: url(../fonts/UniNeue-Light.woff);
 }
 
 
