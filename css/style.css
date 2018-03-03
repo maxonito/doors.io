@@ -27,7 +27,7 @@ body { padding: 0; margin: 0; }
 
 .bg-2 { position: absolute; top: 280rem; width: 100%; }
 
-.main { position: relative; z-index: 11; padding-top: 2rem; background: url(../img/main-doors.png) top no-repeat; background-size: 80% 90%; padding-bottom: 3rem; }
+.main { position: relative; z-index: 11; padding-top: 2rem; background: url(../img/main-doors.png) top no-repeat; background-size: 130rem 90%; padding-bottom: 3rem; }
 .main-wrap { position: relative; background-color: #111111; }
 .main-advantage { color: rgba(255, 255, 255, 0.9); font-size: 1.8rem; margin-top: 18rem; }
 .main-advantage-paragraph { background: url(../img/main-advantage-paragraph.png) center no-repeat; background-size: 100% 100%; padding: 0.5rem; padding-bottom: 1rem; font-family: "light"; font-size: 1.7rem; height: 26rem; }
