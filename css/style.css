@@ -1,0 +1,60 @@
+@font-face { font-family: 'souven'; src: url(../fonts/Souvenir.ttf); }
+@font-face { font-family: 'bold'; src: url(../fonts/Ubuntu-Bold.ttf); }
+@font-face { font-family: 'bold-i'; src: url(../fonts/Ubuntu-BoldItalic.ttf); }
+@font-face { font-family: 'light'; src: url(../fonts/Ubuntu-Light.ttf); }
+@font-face { font-family: 'light-i'; src: url(../fonts/Ubuntu-LI-hinting.ttf); }
+@font-face { font-family: 'regular'; src: url(../fonts/Ubuntu-R-hinting.ttf); }
+@font-face { font-family: 'medium'; src: url(../fonts/Ubuntu-M-hinting.ttf); }
+@font-face { font-family: 'uni'; src: url(../fonts/UniNeue-Light.otf); }
+html { font-size: 10px; font-family: "regular"; }
+
+body { padding: 0; margin: 0; }
+
+.btn { font-size: 2.2rem; font-family: "light"; color: rgba(255, 255, 255, 0.9); padding: 1.2rem 4rem; background-image: url(../img/btn.png); background-size: 100% 100%; border: none; -webkit-box-shadow: 2px 3px 4px 0px rgba(35, 31, 32, 0.65); box-shadow: 2px 3px 4px 0px rgba(35, 31, 32, 0.65); text-shadow: 1px 2px 1px rgba(35, 31, 32, 0.4); cursor: pointer; }
+
+.form { padding: 2rem 3rem; text-align: center; background: url(../img/main-adv-form.png) center center no-repeat; background-size: 100% 100%; height: 31rem; }
+.form-caption { display: inline-block; font-family: "light"; text-align: center; color: rgba(255, 255, 255, 0.9); font-size: 1.9rem; padding-bottom: 1rem; border-bottom: 1px solid #e9d75f; margin-bottom: 2rem; }
+.form input { width: 37rem; height: 4rem; color: #181818; font-size: 2rem; font-family: "regular"; padding: 1.5rem; margin-bottom: 1rem; border-style: solid; border-width: 1px; border-color: #e9d75f; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: rgba(255, 255, 255, 0.8); -webkit-box-shadow: 2px 3px 4px 0px rgba(35, 31, 32, 0.2); box-shadow: 2px 3px 4px 0px rgba(35, 31, 32, 0.2); }
+.form input::-webkit-input-placeholder { color: #181818; text-align: center; font-size: 2rem; font-family: "regular"; }
+.form input:-ms-input-placeholder { color: #181818; text-align: center; font-size: 2rem; font-family: "regular"; }
+.form input::-ms-input-placeholder { color: #181818; text-align: center; font-size: 2rem; font-family: "regular"; }
+.form input::placeholder { color: #181818; text-align: center; font-size: 2rem; font-family: "regular"; }
+.form button { margin-top: 2rem; }
+
+.yellow-line { background-color: #e9d761; height: 1px; width: 100%; margin-top: 3rem; }
+
+.bg-1 { position: absolute; top: 0; right: 0; }
+
+.bg-2 { position: absolute; top: 280rem; }
+
+.main { position: relative; z-index: 11; padding-top: 2rem; background: url(../img/main-doors.png) top no-repeat; padding-bottom: 3rem; }
+.main-wrap { position: relative; background-color: #111111; }
+.main-advantage { color: rgba(255, 255, 255, 0.9); font-size: 2rem; margin-top: 28rem; }
+.main-advantage-paragraph { background: url(../img/main-advantage-paragraph.png) center no-repeat; background-size: 100% 100%; padding: 0.5rem; padding-bottom: 1rem; font-family: "light"; font-size: 1.9rem; height: 31rem; }
+.main-advantage-paragraph ul { list-style: none; text-shadow: 2px 3px 3px rgba(35, 31, 32, 0.3); }
+.main-advantage-paragraph ul li { position: relative; padding-left: 3rem; margin-bottom: 2rem; }
+.main-advantage-paragraph ul li::before { position: absolute; left: -2rem; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); display: block; content: ""; width: 3.5rem; height: 3.5rem; background-image: url(../img/ok.png); background-position: center center; background-repeat: no-repeat; margin-right: 2rem; }
+.main-caption { font-family: "souven"; color: rgba(255, 255, 255, 0.9); text-transform: uppercase; font-size: 3.8rem; font-weight: 400; line-height: 1.842; text-align: center; text-shadow: 2px 3px 5px rgba(35, 31, 32, 0.8); margin: 1rem 3rem; }
+.main-caption-block { margin-top: 30rem; background-image: url(../img/main-caption-block.png); background-size: cover; }
+.main-number { display: inline-block; font-size: 2.2rem; font-family: "light"; margin-right: 2rem; }
+
+.catalog { margin: 0; padding: 0; background-color: #111111; }
+.catalog-btn { position: absolute; bottom: 5%; left: 12%; }
+.catalog-item { width: 100%; position: relative; text-align: center; background: url(../img/door-border.png) center center no-repeat; background-size: 100% 100%; padding: 3rem 4rem; margin-top: 5rem; }
+.catalog .container { position: relative; background-color: rgba(255, 255, 255, 0.3); padding-top: 5rem; padding-bottom: 2rem; }
+.catalog-caption { font-family: "souven"; font-weight: 400; text-align: center; font-size: 4rem; color: rgba(255, 255, 255, 0.9); text-transform: uppercase; text-shadow: 2px 3px 5px rgba(35, 31, 32, 0.65); }
+.catalog-caption-standartplus { color: #e9d761; text-align: center; font-family: "uni"; font-size: 3.5rem; font-weight: 400; padding: 0; margin: 0; margin-top: 3rem; }
+.catalog-caption-standartplus::before { content: ""; display: inline-block; height: 1px; width: 2rem; background-color: #e9d761; -webkit-transform: translateY(-0.7rem); transform: translateY(-0.7rem); margin-right: 1rem; }
+.catalog-caption-standartplus::after { content: ""; display: inline-block; height: 1px; width: 2rem; background-color: #e9d761; -webkit-transform: translateY(-0.7rem); transform: translateY(-0.7rem); margin-left: 1rem; }
+.catalog-caption-standart { color: #e9d761; text-align: center; font-family: "uni"; font-size: 3.5rem; font-weight: 400; padding: 0; margin: 0; }
+.catalog-caption-standart::before { content: ""; display: inline-block; height: 1px; width: 2rem; background-color: #e9d761; -webkit-transform: translateY(-0.7rem); transform: translateY(-0.7rem); margin-right: 1rem; }
+.catalog-caption-standart::after { content: ""; display: inline-block; height: 1px; width: 2rem; background-color: #e9d761; -webkit-transform: translateY(-0.7rem); transform: translateY(-0.7rem); margin-left: 1rem; }
+
+.get_catalog { padding-top: 7rem; padding-bottom: 10rem; background-color: #181818; }
+.get_catalog .container { padding: 0; }
+.get_catalog-book { position: relative; left: -14%; z-index: 10; }
+.get_catalog-form { background: url(../img/get_catalog-form.png) center center no-repeat; background-size: 100% 100%; margin-top: 10rem; }
+.get_catalog-inform { background: url(../img/get_catalog-inform.png) center no-repeat; background-size: 100%; color: rgba(255, 255, 255, 0.9); font-size: 2.3rem; text-align: center; padding: 5rem 10rem; font-family: "light"; font-weight: 300; }
+
+.video { position: relative; }
+.video-caption { margin: 0 0 4rem 0; text-align: center; font-family: "souven"; font-size: 4rem; color: #181818; }
