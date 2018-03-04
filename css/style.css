@@ -6,12 +6,13 @@
 @font-face { font-family: 'regular'; src: url(../fonts/Ubuntu-R.ttf); src: url(../fonts/Ubuntu-R.eot); src: url(../fonts/Ubuntu-R.woff); src: url(../fonts/Ubuntu-R.otf); }
 @font-face { font-family: 'medium'; src: url(../fonts/Ubuntu-M-hinting.ttf); }
 @font-face { font-family: 'uni'; src: url(../fonts/UniNeue-Light.otf); src: url(../fonts/UniNeue-Light.ttf); src: url(../fonts/UniNeue-Light.eot); src: url(../fonts/UniNeue-Light.woff); }
-@media (max-width: 1025px) { html { font-size: 6px; } }
+@media (max-width: 1200px) { .main-wrap { height: 20rem; } }
 html { font-size: 10px; font-family: "regular"; }
 
 body { padding: 0; margin: 0; }
 
 .btn { font-size: 2.2rem; font-family: "light"; color: white; padding: 1rem 4rem; background-image: url(../img/btn.png); background-size: 100% 100%; border: none; -webkit-box-shadow: 2px 3px 4px 0px rgba(35, 31, 32, 0.65); box-shadow: 2px 3px 4px 0px rgba(35, 31, 32, 0.65); text-shadow: 1px 2px 1px rgba(35, 31, 32, 0.4); cursor: pointer; }
+.btn:focus { outline: none; }
 
 .form { padding: 2rem 3rem; text-align: center; background: url(../img/main-adv-form.png) center center no-repeat; background-size: 100% 100%; height: 26rem; }
 .form-caption { display: inline-block; font-family: "light"; text-align: center; color: rgba(255, 255, 255, 0.9); font-size: 1.7rem; padding-bottom: 1rem; border-bottom: 1px solid #e9d75f; margin-bottom: 2rem; }
@@ -33,6 +34,8 @@ body { padding: 0; margin: 0; }
 
 .bg-2 { position: absolute; top: 240rem; width: 100%; height: 976rem; }
 
+.bg { background: #111 url(../img/big-bg-compress.jpg) center bottom no-repeat; background-size: auto 978rem; }
+
 .arrow { position: absolute; z-index: 99; top: 50%; border: none; width: 6rem; height: 6rem; background-color: #000; }
 .arrow:focus { outline: none; }
 
@@ -53,9 +56,9 @@ body { padding: 0; margin: 0; }
 .main-caption-block { margin: auto; width: 90%; margin-top: 13rem; background-image: url(../img/main-caption-block.png); background-size: cover; }
 .main-number { display: inline-block; font-size: 2.2rem; font-family: "light"; margin-right: 2rem; }
 
-.catalog { margin: 0; padding: 0; background-color: #111111; }
+.catalog { margin: 0; padding: 0; }
 .catalog-btn { position: absolute; bottom: 5%; left: 12%; }
-.catalog-item { width: 100%; position: relative; text-align: center; background: url(../img/door-border.png) center center no-repeat; background-size: 100% 100%; padding: 3rem 4rem; margin-top: 5rem; }
+.catalog-item { width: 100%; position: relative; text-align: center; background: url(../img/door-border.png) center center no-repeat; background-size: 100% 100%; padding: 3rem 4rem; margin-top: 5rem; height: 63rem; }
 .catalog .container { position: relative; background-color: rgba(255, 255, 255, 0.3); padding-top: 5rem; padding-bottom: 2rem; }
 .catalog-caption { font-family: "souven"; font-weight: 400; text-align: center; font-size: 4rem; color: white; text-transform: uppercase; text-shadow: 2px 3px 5px rgba(35, 31, 32, 0.65); }
 .catalog-caption-standartplus { color: #e9d761; text-align: center; font-family: "uni"; font-size: 3.5rem; font-weight: 400; padding: 0; margin: 0; margin-top: 3rem; }
@@ -65,23 +68,35 @@ body { padding: 0; margin: 0; }
 .catalog-caption-standart::before { content: ""; display: inline-block; height: 1px; width: 2rem; background-color: #e9d761; -webkit-transform: translateY(-0.7rem); transform: translateY(-0.7rem); margin-right: 1rem; }
 .catalog-caption-standart::after { content: ""; display: inline-block; height: 1px; width: 2rem; background-color: #e9d761; -webkit-transform: translateY(-0.7rem); transform: translateY(-0.7rem); margin-left: 1rem; }
 
-.get_catalog { padding-top: 7rem; padding-bottom: 7rem; background-color: #181818; }
+.get_catalog { margin-top: 4rem; }
+.get_catalog-height { height: 50rem; }
 .get_catalog .container { padding: 0; }
 .get_catalog-book { position: relative; left: -14%; z-index: 10; }
 .get_catalog-form { background: url(../img/get_catalog-form.png) center center no-repeat; background-size: 100% 100%; margin-top: 10rem; }
 .get_catalog-inform { position: relative; background: url(../img/get_catalog-inform.png) center no-repeat; background-size: 100%; color: white; font-size: 2.3rem; text-align: center; padding: 5rem 10rem; font-family: "light"; font-weight: 300; }
 
-.video { position: relative; }
+.video { height: 60rem; position: relative; }
+.video iframe { position: absolute; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 .video-caption { margin: 0 0 4rem 0; text-align: center; font-family: "souven"; font-size: 4rem; color: #181818; }
 
-.advantage { position: relative; margin-top: 7rem; position: relative; width: 100%; height: 100rem; }
+.advantage { position: relative; margin-top: 7rem; margin-bottom: 20rem; position: relative; width: 100%; height: 100rem; }
+.advantage-wrap { margin: auto; position: relative; width: 110rem; }
 .advantage .block { position: absolute; font-size: 2rem; color: #181818; text-align: right; }
 .advantage .block div { position: relative; top: -25rem; left: 24rem; height: 10rem; width: 30rem; }
-.advantage .block-1 { top: 15rem; left: 35%; }
-.advantage .block-2 { top: 31rem; left: 43.5%; }
-.advantage .block-3 { top: 47rem; left: 52%; }
-.advantage .block-4 { top: 62rem; left: 60%; }
-.advantage-caption { color: #181818; font-family: "souven"; font-weight: 400; font-size: 4rem; text-align: center; }
+.advantage .block-l { position: absolute; font-size: 2rem; font-family: "light"; color: white; text-align: left; }
+.advantage .block-l div { position: relative; top: -11rem; left: -28rem; height: 10rem; width: 40rem; }
+.advantage .block-1 { top: 5rem; right: 50rem; }
+.advantage .block-2 { top: 20rem; right: 35rem; }
+.advantage .block-3 { top: 35rem; right: 20rem; }
+.advantage .block-4 { top: 50rem; right: 5rem; }
+.advantage .block-5 { top: 22rem; left: 18rem; }
+.advantage .block-5 div { position: relative; top: -27rem; left: -20rem; height: 10rem; width: 30rem; }
+.advantage .block-6 { top: 37rem; left: 33rem; }
+.advantage .block-7 { top: 52rem; left: 48rem; }
+.advantage .block-7 div { top: -9rem; left: -32rem; }
+.advantage .block-8 { top: 67rem; left: 64rem; }
+.advantage .block-8 div { top: -9rem; left: -32rem; }
+.advantage-caption { position: relative; right: -5rem; color: #181818; font-family: "souven"; font-weight: 400; font-size: 4rem; text-align: center; }
 
 .work { position: relative; margin-top: 10rem; text-align: center; }
 .work .btn { margin-top: 4rem; }
@@ -94,14 +109,14 @@ body { padding: 0; margin: 0; }
 .call-text { text-align: center; font-size: 2.4rem; font-family: "light"; font-weight: 300; color: white; background: url(../img/call-text.png) center no-repeat; background-size: 100% 100%; padding: 3rem; }
 .call-text b { font-family: "bold"; font-size: 2.8rem; }
 
-.about { margin-top: 20rem; position: relative; }
-.about-block { margin-top: 6rem; width: 25rem; height: 30rem; }
+.about { margin-top: 20rem; position: relative; top: -20rem; }
+.about-block { margin-top: 6rem; width: 25rem; height: 28rem; }
 .about-text { display: inline-block; text-align: center; font-size: 2.8rem; font-family: "uni"; font-weight: 400; width: 100%; }
 .about-img { display: inline-block; width: 100%; }
 .about-caption { text-align: left; text-transform: uppercase; font-family: "souven"; font-weight: 400; font-size: 4rem; }
 .about-caption span { margin-left: 24rem; }
 
-.thanks { position: relative; margin-top: 13rem; }
+.thanks { position: relative; top: -7rem; margin-top: 10rem; }
 .thanks-slider { width: 80%; height: 30rem; margin: auto; margin-top: 9rem; }
 .thanks-caption { font-size: 4rem; font-weight: 400; font-family: "souven"; text-transform: uppercase; text-align: center; }
 .thanks-block:focus { outline: none; }

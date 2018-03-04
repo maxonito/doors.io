@@ -25,6 +25,8 @@ body
 	box-shadow: 2px 3px 4px 0px rgba(35, 31, 32, 0.65)
 	text-shadow: 1px 2px 1px rgba(35, 31, 32, 0.4)
 	cursor: pointer
+	&:focus
+		outline: none
 
 .form
 	padding: 2rem 3rem
@@ -91,7 +93,9 @@ body
 	top: 240rem
 	width: 100%
 	height: 976rem
-
+.bg 
+	background: #111 url(../img/big-bg-compress.jpg) center bottom no-repeat
+	background-size: auto 978rem
 .arrow 
 	position: absolute
 	z-index: 99
@@ -187,7 +191,7 @@ body
 .catalog
 	margin: 0
 	padding: 0
-	background-color: #111111
+	//background-color: #111111
 	&-btn
 		position: absolute
 		bottom: 5%
@@ -200,6 +204,7 @@ body
 		background-size: 100% 100%
 		padding: 3rem 4rem
 		margin-top: 5rem
+		height: 63rem
 	.container
 		position: relative
 		background-color: rgba(255, 255, 255, 0.3)
@@ -265,9 +270,10 @@ body
 				margin-left: 1rem
 
 .get_catalog
-	padding-top: 7rem
-	padding-bottom: 7rem
-	background-color: $black
+	margin-top: 4rem
+	//background-color: $black
+	&-height
+		height: 50rem
 	.container
 		padding: 0
 	&-book
@@ -290,7 +296,12 @@ body
 		font-weight: 300
 
 .video
+	height: 60rem
 	position: relative
+	iframe
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
 	&-caption
 		margin: 0 0 4rem 0
 		text-align: center
@@ -301,9 +312,14 @@ body
 .advantage
 	position: relative
 	margin-top: 7rem
+	margin-bottom: 20rem
 	position: relative
 	width: 100%
 	height: 100rem
+	&-wrap
+		margin: auto
+		position: relative
+		width: 110rem
 	.block
 		position: absolute
 		font-size: 2rem
@@ -315,19 +331,58 @@ body
 			left: 24rem
 			height: 10rem
 			width: 30rem
+	.block-l
+		position: absolute
+		font-size: 2rem
+		font-family: 'light'
+		color: $white
+		text-align: left
+		div
+			position: relative
+			top: -11rem	
+			left: -28rem
+			height: 10rem
+			width: 40rem
 	.block-1
-		top: 15rem
-		left: 35%
+		top: 5rem
+		right: 50rem
 	.block-2
-		top: 31rem
-		left: 43.5%
+		top: 20rem
+		right: 35rem
 	.block-3
-		top: 47rem
-		left: 52%
+		top: 35rem
+		right: 20rem
 	.block-4
-		top: 62rem
-		left: 60%
+		top: 50rem
+		right: 5rem
+
+	.block-5
+		top: 22rem
+		left: 18rem
+		div
+			position: relative
+			top: -27rem	
+			left: -20rem
+			height: 10rem
+			width: 30rem
+	.block-6
+		top: 37rem
+		left: 33rem
+	.block-7
+		top: 52rem
+		left: 48rem
+		div
+			top: -9rem
+			left: -32rem
+	.block-8
+		top: 67rem
+		left: 64rem
+		div
+			top: -9rem
+			left: -32rem
 	&-caption
+		position: relative
+		right: -5rem
 		color: $black
 		font-family: 'souven'
 		font-weight: 400
@@ -376,10 +431,11 @@ body
 .about
 	margin-top: 20rem
 	position: relative
+	top: -20rem
 	&-block
 		margin-top: 6rem
 		width: 25rem
-		height: 30rem
+		height: 28rem
 	&-text
 		display: inline-block
 		text-align: center
@@ -402,7 +458,8 @@ body
 
 .thanks
 	position: relative
-	margin-top: 13rem
+	top: -7rem
+	margin-top: 10rem
 	&-slider
 		width: 80%
 		height: 30rem
