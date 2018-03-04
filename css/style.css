@@ -6,11 +6,10 @@
 @font-face { font-family: 'regular'; src: url(../fonts/Ubuntu-R.ttf); src: url(../fonts/Ubuntu-R.eot); src: url(../fonts/Ubuntu-R.woff); src: url(../fonts/Ubuntu-R.otf); }
 @font-face { font-family: 'medium'; src: url(../fonts/Ubuntu-M-hinting.ttf); }
 @font-face { font-family: 'uni'; src: url(../fonts/UniNeue-Light.otf); src: url(../fonts/UniNeue-Light.ttf); src: url(../fonts/UniNeue-Light.eot); src: url(../fonts/UniNeue-Light.woff); }
+@media (max-width: 1025px) { html { font-size: 6px; } }
 html { font-size: 10px; font-family: "regular"; }
 
 body { padding: 0; margin: 0; }
-
-*:visited, *:active { outline: none; }
 
 .btn { font-size: 2.2rem; font-family: "light"; color: white; padding: 1rem 4rem; background-image: url(../img/btn.png); background-size: 100% 100%; border: none; -webkit-box-shadow: 2px 3px 4px 0px rgba(35, 31, 32, 0.65); box-shadow: 2px 3px 4px 0px rgba(35, 31, 32, 0.65); text-shadow: 1px 2px 1px rgba(35, 31, 32, 0.4); cursor: pointer; }
 
