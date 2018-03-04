@@ -151,8 +151,10 @@ body { padding: 0; margin: 0; }
 .question-form input { border: 2px solid #827645; font-size: 2rem; width: 37rem; height: 4rem; margin-bottom: 1.6rem; }
 .question .copyright { margin-top: 5rem; text-align: center; font-size: 2rem; font-family: "light"; }
 
-@media (max-width: 1300px) { html { font-size: 8px; }
+@media (max-width: 1200px) { html { font-size: 8px; }
   .main-caption-block { margin-top: 3rem; }
-  .main-advantage { margin-top: 3rem; } }
+  .main-advantage { margin-top: 3rem; }
+  .main-advantage-paragraph { height: 29rem; }
+  .main-advantage-form { height: 29rem; } }
 @media (max-width: 1500px) { html { font-size: 9px; }
   .advantage-wrap { width: 110rem; } }
