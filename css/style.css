@@ -6,7 +6,6 @@
 @font-face { font-family: 'regular'; src: url(../fonts/Ubuntu-R.ttf); src: url(../fonts/Ubuntu-R.eot); src: url(../fonts/Ubuntu-R.woff); src: url(../fonts/Ubuntu-R.otf); }
 @font-face { font-family: 'medium'; src: url(../fonts/Ubuntu-M-hinting.ttf); }
 @font-face { font-family: 'uni'; src: url(../fonts/UniNeue-Light.otf); src: url(../fonts/UniNeue-Light.ttf); src: url(../fonts/UniNeue-Light.eot); src: url(../fonts/UniNeue-Light.woff); }
-@media (max-width: 1200px) { .main-advantage { margin-top: 8rem; } }
 html { font-size: 10px; font-family: "regular"; }
 
 body { padding: 0; margin: 0; }
@@ -150,3 +149,6 @@ body { padding: 0; margin: 0; }
 .question-form { padding: 7rem 10rem; background: url(../img/question-form.png) center center no-repeat; height: 46rem; }
 .question-form input { border: 2px solid #827645; font-size: 2rem; width: 37rem; height: 4rem; margin-bottom: 1.6rem; }
 .question .copyright { margin-top: 5rem; text-align: center; font-size: 2rem; font-family: "light"; }
+
+@media (max-width: 1200px) { .main-caption-block { margin-top: 3rem; }
+  .main-advantage { margin-top: 3rem; } }
