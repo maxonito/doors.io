@@ -6,7 +6,7 @@
 @font-face { font-family: 'regular'; src: url(../fonts/Ubuntu-R.ttf); src: url(../fonts/Ubuntu-R.eot); src: url(../fonts/Ubuntu-R.woff); src: url(../fonts/Ubuntu-R.otf); }
 @font-face { font-family: 'medium'; src: url(../fonts/Ubuntu-M-hinting.ttf); }
 @font-face { font-family: 'uni'; src: url(../fonts/UniNeue-Light.otf); src: url(../fonts/UniNeue-Light.ttf); src: url(../fonts/UniNeue-Light.eot); src: url(../fonts/UniNeue-Light.woff); }
-@media (max-width: 1200px) { .main-wrap { height: 20rem; } }
+@media (max-width: 1200px) { .main-advantage { margin-top: 8rem; } }
 html { font-size: 10px; font-family: "regular"; }
 
 body { padding: 0; margin: 0; }
