@@ -1,8 +1,21 @@
 @media (max-width: 1200px) { 
+	html {
+		font-size: 8px;
+	}
 	.main-caption-block {
 		margin-top: 3rem;
 	}
 	.main-advantage {
 		margin-top: 3rem;
 	}
+}
+
+@media (max-width: 1500px) { 
+	html {
+		font-size: 9px;
+	}
+	.advantage-wrap {
+		width: 110rem;
+	}
+	
 }

@@ -58,6 +58,7 @@ body { padding: 0; margin: 0; }
 .catalog { margin: 0; padding: 0; }
 .catalog-btn { position: absolute; bottom: 5%; left: 12%; }
 .catalog-item { width: 100%; position: relative; text-align: center; background: url(../img/door-border.png) center center no-repeat; background-size: 100% 100%; padding: 3rem 4rem; margin-top: 5rem; height: 63rem; }
+.catalog-item-img { width: 100%; height: 100%; }
 .catalog .container { position: relative; background-color: rgba(255, 255, 255, 0.3); padding-top: 5rem; padding-bottom: 2rem; }
 .catalog-caption { font-family: "souven"; font-weight: 400; text-align: center; font-size: 4rem; color: white; text-transform: uppercase; text-shadow: 2px 3px 5px rgba(35, 31, 32, 0.65); }
 .catalog-caption-standartplus { color: #e9d761; text-align: center; font-family: "uni"; font-size: 3.5rem; font-weight: 400; padding: 0; margin: 0; margin-top: 3rem; }
@@ -150,5 +151,8 @@ body { padding: 0; margin: 0; }
 .question-form input { border: 2px solid #827645; font-size: 2rem; width: 37rem; height: 4rem; margin-bottom: 1.6rem; }
 .question .copyright { margin-top: 5rem; text-align: center; font-size: 2rem; font-family: "light"; }
 
-@media (max-width: 1200px) { .main-caption-block { margin-top: 3rem; }
+@media (max-width: 1300px) { html { font-size: 8px; }
+  .main-caption-block { margin-top: 3rem; }
   .main-advantage { margin-top: 3rem; } }
+@media (max-width: 1500px) { html { font-size: 9px; }
+  .advantage-wrap { width: 110rem; } }
