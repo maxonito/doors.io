@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=1500, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<title>doors</title>
 		
@@ -21,8 +21,10 @@
 			<div class="main" id="main">
 				<div class="container">
 					<div class="row justify-content-end">
-						<div class="col-6 ">
+						<div class="col-12 col-lg-3 col-sm-6 align-self-center">
 							<div class="main-number" id="number">096-777-77-77</div>
+						</div>
+						<div class="col-12 col-lg-4 col-sm-6">
 							<button class="btn">Вам перезвонить?</button>
 						</div>
 					</div>
@@ -33,7 +35,7 @@
 					</div>
 					<div class="main-advantage">
 						<div class="row">
-							<div class="col-6 ">
+							<div class="col-sm-12 col-md-6">
 								<div class="main-advantage-paragraph">
 									<ul>
 										<li>Широкий спектр узоров МДФ накладок, а также <br> цветовой гаммы пленок ПВХ и Vinorit</li>
@@ -44,10 +46,10 @@
 									</ul>
 								</div>
 							</div>
-							<div class="col-6">
+							<div class="col-sm-12 col-md-6">
 								<div class="main-advantage-form form">
 									<span class="form-caption">Для того, чтобы вызвать мастера на замер бесплатно и получить полный каталог дверей, заполните форму</span>
-									<form action="smart.php">
+									<form action="smart.php" method="post">
 										<input required="" type="text" name="name" placeholder="Имя">
 										<input required="" type="text" name="number" placeholder="Телефон" id="phone-1">
 										<button class="btn" type="submit">Записаться на замер</button>
@@ -65,8 +67,16 @@
 				<div class="container">
 					<h2 class="catalog-caption">каталог дверей</h2>
 					<h3 class="catalog-caption-standart">модели «Стандарт»</h3>
-					<div class="row">
-						<div class="col-4">
+					<div class="row justify-content-center">
+						<div class="col-7 col-sm-4">
+							<div class="catalog-item">
+								<img src="img/d-1.png" alt="Дверь-1" class="catalog-item-img">
+								<div class="btn-wrap">
+									<button class="catalog-btn btn">Узнать стоимость</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-7 col-sm-4 ">
 							<div class="catalog-item">
 								<img src="img/d-1.png" alt="Дверь-1" class="catalog-item-img">
 								<div class="btn-wrap">
@@ -74,15 +84,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-4">
-							<div class="catalog-item">
-								<img src="img/d-1.png" alt="Дверь-1" class="catalog-item-img">
-								<div class="btn-wrap">
-									<button class=" catalog-btn btn">Узнать стоимость</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-4">
+						<div class="col-7 col-sm-4">
 							<div class="catalog-item">
 								<img src="img/d-1.png" alt="Дверь-1" class="catalog-item-img">
 								<div class="btn-wrap">
@@ -93,8 +95,8 @@
 					</div>
 					<div class="yellow-line"></div>
 					<h3 class="catalog-caption-standartplus">модели «Стандарт+»</h3>
-					<div class="row">
-						<div class="col-4">
+					<div class="row justify-content-center">
+						<div class="col-7 col-sm-4">
 							<div class="catalog-item">
 								<img src="img/d-1.png" alt="Дверь-1" class="catalog-item-img">
 								<div class="btn-wrap">
@@ -102,7 +104,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-4">
+						<div class="col-7 col-sm-4">
 							<div class="catalog-item">
 								<img src="img/d-1.png" alt="Дверь-1" class="catalog-item-img">
 								<div class="btn-wrap">
@@ -110,7 +112,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-4">
+						<div class="col-7 col-sm-4">
 							<div class="catalog-item">
 								<img src="img/d-1.png" alt="Дверь-1" class="catalog-item-img">
 								<div class="btn-wrap">
@@ -121,8 +123,8 @@
 					</div>
 					<div class="yellow-line"></div>
 					<h3 class="catalog-caption-standartplus">модели «Премиум»</h3>
-					<div class="row">
-						<div class="col-4">
+					<div class="row justify-content-center">
+						<div class="col-7 col-sm-4">
 							<div class="catalog-item">
 								<img src="img/d-1.png" alt="Дверь-1" class="catalog-item-img">
 								<div class="btn-wrap">
@@ -130,7 +132,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-4">
+						<div class="col-7 col-sm-4">
 							<div class="catalog-item">
 								<img src="img/d-1.png" alt="Дверь-1" class="catalog-item-img">
 								<div class="btn-wrap">
@@ -138,7 +140,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-4">
+						<div class="col-7 col-sm-4">
 							<div class="catalog-item">
 								<img src="img/d-1.png" alt="Дверь-1" class="catalog-item-img">
 								<div class="btn-wrap">
@@ -156,16 +158,16 @@
 						На сайте представлены не все варианты дверей,<br>
 						чтобы получить полный каталог с более 20 наименований заполните форму ниже.
 					</div>
-					<div class="row get_catalog-height">
-						<div class="col-6">
+					<div class="row get_catalog-height justify-content-between">
+						<div class="col-0 col-md-5 col-lg-6">
 							<img src="img/get_catalog-book.png" alt="" class="get_catalog-book">
 						</div>
-						<div class="col-6">
+						<div class="col-12 col-sm-12 col-md-7 col-9 col-lg-6 ">
 								<div class="get_catalog-form form">
 									<span class="form-caption">Для того, чтобы вызвать мастера на замер бесплатно и получить полный каталог дверей, заполните форму</span>
-									<form action="smart.php">
+									<form action="smart.php" method="post">
 										<input required="" type="text" name="name" placeholder="Имя">
-										<input required="" type="text" name="phone" placeholder="Телефон" id="phone-2">
+										<input required="" type="text" name="number" placeholder="Телефон" id="phone-2">
 										<button class="btn" type="submit">Записаться на замер</button>
 									</form>
 								</div>
@@ -179,7 +181,7 @@
 					<h2 class="video-caption">
 						Видео о нашей компании
 					</h2>
-					<iframe width="800" height="500" src="https://www.youtube.com/embed/rLxoaeI8n0g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<iframe  src="https://www.youtube.com/embed/rLxoaeI8n0g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
 			</section>
 			
@@ -260,7 +262,7 @@
 						наши работы
 					</h2>
 					<div class="fotorama-wrap">
-						<div class="fotorama"  data-nav="thumbs" data-thumbwidth="120" data-thumbheight="100" data-width="970" data-height="600" data-arrows="true">
+						<div class="fotorama"  data-nav="thumbs"  data-width="100%" data-arrows="true">
 							<img src="http://s.fotorama.io/1.jpg">
 				  					<img src="http://s.fotorama.io/2.jpg">
 				  					<img src="http://s.fotorama.io/1.jpg">
@@ -281,10 +283,10 @@
 					<div class="row">
 						<div class="col-6">
 							<div class="form">
-								<span class="form-caption">Для того, чтобы вызвать мастера на замер бесплатно и получить полный каталог дверей, заполните форму</span>
-								<form action="smart.php">
+								<span class="form-caption">Чтобы вызвать мастера-консультанта в 2 клика, заполните форму ниже</span>
+								<form action="smart.php" method="post">
 									<input required="" type="text" name="name" placeholder="Имя">
-									<input required="" type="text" name="phone" placeholder="Телефон">
+									<input required="" type="text" name="number" placeholder="Телефон" id="phone-3">
 									<button class="btn" type="submit">Записаться на замер</button>
 								</form>
 							</div>
@@ -489,13 +491,46 @@
 					<div class="sertificate-block">
 						<div class="row">
 							<div class="col-4">
-								<img src="img/sert-1.jpg" alt="" class="sertificate-img">
+								<div class="blokimg">
+									<div class="overlay" id="contenedor1">
+										<div class="overlay_container">
+											<a href="#close">
+												<img src="img/sert-1.jpg"/>
+											</a>
+										</div>
+									</div>
+									<a href="#contenedor1">
+										<img src="img/sert-1.jpg" id="imagenM1" class="sertificate-img"/>
+									</a>
+								</div>
 							</div>
 							<div class="col-4">
-								<img src="img/sert-2.jpg" alt="" class="sertificate-img">
+								<div class="blokimg">
+									<div class="overlay" id="contenedor2">
+										<div class="overlay_container">
+											<a href="#close">
+												<img src="img/sert-2.jpg"/>
+											</a>
+										</div>
+									</div>
+									<a href="#contenedor2">
+										<img src="img/sert-2.jpg" id="imagenM1" class="sertificate-img"/>
+									</a>
+								</div>
 							</div>
 							<div class="col-4">
-								<img src="img/sert-3.jpg" alt="" class="sertificate-img">
+								<div class="blokimg">
+									<div class="overlay" id="contenedor3">
+										<div class="overlay_container">
+											<a href="#close">
+												<img src="img/sert-3.jpg"/>
+											</a>
+										</div>
+									</div>
+									<a href="#contenedor3">
+										<img src="img/sert-3.jpg" id="imagenM1" class="sertificate-img"/>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -541,10 +576,10 @@
 							Осталсись вопросы?
 						</h3>
 						<div class="form question-form">
-							<form action="smart.php">
-								<input required="" type="text" placeholder="Имя">
-								<input required="" type="email" placeholder="E-mail">
-								<textarea required="" name="qestion" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+							<form action="smart-2.php" method="post">
+								<input required="" type="text" placeholder="Имя" name="name">
+								<input required="" type="email" placeholder="E-mail" name="email">
+								<textarea required="" name="text" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
 								<button class="btn">Получить ответ</button>
 							</form>
 						</div>
@@ -571,8 +606,9 @@
 		<script src="js/jquery.maskedinput.min.js"></script>
 		<script>
 			jQuery(function($){
-		   $("#phone-1").mask("+7 (999) 999-99-99");
-		   $("#phone-2").mask("+7 (999) 999-99-99");
+		   $("#phone-1").mask("+3 (999) 999-99-99");
+		   $("#phone-2").mask("+3 (999) 999-99-99");
+		   $("#phone-3").mask("+3 (999) 999-99-99");
 			});
 		</script>
 		<script>

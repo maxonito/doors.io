@@ -2,7 +2,8 @@
 @import "fonts"
 // Цвета
 @import "colors"
-
+// Сертификаты
+@import "sert"
 
 // Базовые стили
 html
@@ -126,7 +127,7 @@ body
 	z-index: 11
 	padding-top: 2rem
 	background: url(../img/main-doors.png) top no-repeat
-	background-size: 130rem 90%
+	background-size: 130rem 100%
 	padding-bottom: 3rem
 	&-wrap
 		position: relative
@@ -182,19 +183,20 @@ body
 			background-image: url(../img/main-caption-block.png)
 			background-size: cover
 	&-number
+		width: 100%
 		display: inline-block
 		font-size: 2.2rem
 		font-family: 'light'
-		margin-right: 2rem
+		text-align: right
 
 .catalog
 	margin: 0
 	padding: 0
 	//background-color: #111111
 	&-btn
-		position: absolute
-		bottom: 5%
-		left: 12%
+		font-size: 2rem
+		position: relative
+		top: -5rem
 	&-item
 		width: 100%
 		position: relative
@@ -280,12 +282,15 @@ body
 		padding: 0
 	&-book
 		position: relative
-		left: -14%
+		left: -6rem
 		z-index: 10
+		width: 70rem
 	&-form
 		background: url(../img/get_catalog-form.png) center center no-repeat
 		background-size: 100% 100%
 		margin-top: 10rem
+		width: 50rem
+		height: 29rem
 	&-inform
 		position: relative
 		background:  url(../img/get_catalog-inform.png) center no-repeat
@@ -298,12 +303,14 @@ body
 		font-weight: 300
 
 .video
-	height: 60rem
 	position: relative
+	height: 60rem
 	iframe
 		position: absolute
 		left: 50%
 		transform: translateX(-50%)
+		width: 50%
+		height: 100%
 	&-caption
 		margin: 0 0 4rem 0
 		text-align: center
@@ -312,6 +319,7 @@ body
 		color: $black
 
 .advantage
+	display: none
 	position: relative
 	margin-top: 7rem
 	margin-bottom: 20rem
@@ -417,6 +425,8 @@ body
 	margin-top: 10rem
 	.form
 		margin-top: 10rem
+		width: 54rem
+		height: 28.5rem
 	&-text
 		text-align: center
 		font-size: 2.4rem
@@ -612,4 +622,160 @@ body
 
 
 // Медиа-запросы
-@import "media"
+//@import "media"
+
+@media (max-width: 1200px) 
+	html 
+		font-size: 9px
+	
+	.main-caption-block 
+		margin-top: 3rem
+	
+	.main-advantage 
+		margin-top: 3rem
+	
+	.main-advantage-paragraph 
+		height: 29rem
+	
+	.main-advantage-form 
+		height: 29rem
+	
+	.main 
+		&-number 
+			margin-bottom: 1rem
+		
+	
+	.bg-1 
+		width: 50%
+	
+	.video
+		height: 45rem
+
+@media (max-width: 992px) 
+	.main-advantage-paragraph 
+		font-size: 1.6rem
+		margin-left: 0rem
+		height: 31rem
+	.main-advantage-form 
+		font-size: 1.6rem
+		height: 31rem
+		input
+			width: 100%
+	
+	.catalog
+		.btn
+			padding: 0.6rem 1rem
+			width: 100%
+			font-size: 1.6rem
+			line-height: 1.8rem
+			margin-top: 2rem
+		&-item
+			height: 40rem
+	
+	.get_catalog-book
+		width: 48rem
+	.get_catalog-form
+		width: 100%
+	.video
+		height: 36rem
+		iframe
+			width: 70%
+@media (max-width: 767px) 
+	.main-caption-block
+		width: 100%
+	.main-advantage
+		position: relative
+		font-size: 2rem
+		color: #fff
+
+	.main-advantage-paragraph 
+		font-size: 1.6rem
+		margin-left: 0rem
+		height: 26rem
+		width: 90%
+		margin: auto
+		background-color: rgba(0,0,0, 0.4)
+	.main-advantage-form 
+		font-size: 1.6rem
+		height: 26rem
+		width: 90%
+		margin: auto
+		margin-top: 1rem
+		background-color: rgba(0,0,0, 0.4)
+	
+	.catalog
+		&-item
+			padding: 2rem
+			height: 30rem
+		.btn
+			padding: 0.6rem 0.6rem
+			font-size: 1.4rem
+	.get_catalog-inform
+		background-size: 100% 100%
+		padding: 2rem
+		margin-bottom: 0
+	.get_catalog-book
+		display: none
+	.get_catalog-form
+		width: 80%
+		margin: auto
+		margin-top: 0
+	.get_catalog-height
+		height: 35rem
+	.video
+		height: 36rem
+		iframe
+			width: 80%
+@media (max-width: 576px) 
+	.bg-1
+		display: none
+	.main-number
+		text-align: center
+		font-size: 2.6rem
+	.main 
+		background-size: auto 70%
+		text-align: center
+		.btn
+			font-size: 1.7rem
+	.main-advantage-paragraph
+		text-align: left
+		height: 100%
+	.main-advantage-form
+		height: 100%
+	
+	.catalog
+		&-item
+			height: 47rem
+			padding: 4rem
+		.btn
+			padding: 2rem
+			font-size: 2rem
+			top: -6rem
+	.get_catalog
+		.form
+			height: 95%
+			input
+				width: 100%
+
+
+@media (max-width: 490px) 
+	.catalog
+		&-item
+			padding: 1.8rem
+			height: 44rem
+		.btn
+			padding: 1.4rem 0
+			font-size: 1.8rem
+			top: -7rem
+	.video
+		height: 30rem
+		iframe
+			width: 90%
+@media (max-width: 400px) 
+	.catalog
+		&-item
+			padding: 1.6rem
+			height: 39rem
+		.btn
+			padding: 1.4rem 0
+			font-size: 1.8rem

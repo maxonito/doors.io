@@ -1,6 +1,6 @@
 @media (max-width: 1200px) { 
 	html {
-		font-size: 8px;
+		font-size: 9px;
 	}
 	.main-caption-block {
 		margin-top: 3rem;
@@ -14,14 +14,32 @@
 	.main-advantage-form {
 		height: 29rem;
 	}
+	.main {
+		&-number {
+			margin-bottom: 1rem;
+		}
+	}
+	.bg-1 {
+		width: 50%;
+	}
 }
+@media (max-width: 992px) { 
+	.main-advantage-paragraph {
+		font-size: 1rem;
+	}
+ }
 
-@media (max-width: 1500px) { 
-	html {
-		font-size: 9px;
-	}
-	.advantage-wrap {
-		width: 110rem;
-	}
-	
-}
+
+@media (max-width: 576px) { 
+
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) { 
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) { 
+
+ }
