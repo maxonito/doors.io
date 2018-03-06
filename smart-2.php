@@ -1,3 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Thank you!</title>
+	<!-- Custom styles for this template -->
+	<link href="css/style.css" rel="stylesheet">
+</head>
+	<body>
+	<div class="contain">
+		<div class="message">
+			Спасибо, что задали вопрос! <br>
+			В ближайшее время мы <br>
+			с Вами свяжемся
+		</div>
+		<div class="copyright">© 2018 Двери. All rights reserved.</div>
+	</div>
+	</body>
+</html>
+
 <?php 
 
 

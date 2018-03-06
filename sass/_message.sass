@@ -1,0 +1,41 @@
+.contain
+	position: relative
+	height: 100vh
+	width: 100vw
+	font-size: 30px
+	background:  url(../img/thanks-smart.jpg) center center no-repeat
+	background-size: 100% 100%
+.message
+	background:  url(../img/thanks-massage.png) center no-repeat
+	background-size: 100% 100%
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	padding: 10rem 10rem
+	text-align: center
+	color: $white
+.copyright
+	font-size: 20px
+	position: absolute
+	bottom: 4%
+	left: 50%
+	color: $white
+	transform: translateX(-50%)
+
+@media(max-width: 1000px )
+	.message
+		padding: 5rem
+		font-size: 20px
+@media(max-width: 600px )
+	.message
+		padding: 2rem
+		font-size: 16px
+	.copyright
+		font-size: 16px
+@media(max-width: 450px )
+	.message
+		padding: 2rem
+		font-size: 14px
+	.copyright
+		font-size: 14px

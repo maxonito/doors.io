@@ -4,7 +4,8 @@
 @import "colors"
 // Сертификаты
 @import "sert"
-
+// Страница благодарности
+@import "message"
 // Базовые стили
 html
 	font-size: 10px
@@ -117,7 +118,8 @@ body
 	background: url(../img/right-arrow.png) center no-repeat
 	background-size: 100%
 	z-index: 1000
-
+#arrow-del
+	display: none
 .clear
 	content: ''
 	clear: both
@@ -279,7 +281,7 @@ body
 	&-height
 		height: 50rem
 	.container
-		padding: 0
+		
 	&-book
 		position: relative
 		left: -6rem
@@ -319,17 +321,16 @@ body
 		color: $black
 
 .advantage
-	display: none
 	position: relative
-	margin-top: 7rem
-	margin-bottom: 20rem
+	margin-top: 17rem
+	margin-bottom: 21rem
 	position: relative
 	width: 100%
 	height: 100rem
 	&-wrap
 		margin: auto
 		position: relative
-		width: 110rem
+		width: 100%
 	.block
 		position: absolute
 		font-size: 2rem
@@ -355,20 +356,20 @@ body
 			width: 40rem
 	.block-1
 		top: 5rem
-		right: 50rem
+		right: 45rem
 	.block-2
 		top: 20rem
-		right: 35rem
+		right: 30rem
 	.block-3
 		top: 35rem
-		right: 20rem
+		right: 15rem
 	.block-4
 		top: 50rem
-		right: 5rem
+		right: 0rem
 
 	.block-5
 		top: 22rem
-		left: 18rem
+		left: 23rem
 		div
 			position: relative
 			top: -27rem	
@@ -377,22 +378,22 @@ body
 			width: 30rem
 	.block-6
 		top: 37rem
-		left: 33rem
+		left: 38rem
 	.block-7
 		top: 52rem
-		left: 48rem
+		left: 53rem
 		div
 			top: -9rem
 			left: -32rem
 	.block-8
 		top: 67rem
-		left: 64rem
+		left: 69rem
 		div
 			top: -9rem
 			left: -32rem
 	&-caption
 		position: relative
-		right: -5rem
+		right: -3rem
 		color: $black
 		font-family: 'souven'
 		font-weight: 400
@@ -401,7 +402,7 @@ body
 
 .work
 	position: relative
-	margin-top: 10rem
+	margin-top: 16rem
 	text-align: center
 	.btn
 		margin-top: 4rem
@@ -412,17 +413,21 @@ body
 		color: $white
 		text-align: center
 		text-shadow: 2px 3px 5px rgba(35, 31, 32, 0.65)
+	// .fotorama-wrap
+	// 	width: 100%
 	.fotorama
-		display: inline-block
-		margin: auto
-		&-wrap
-			position: relative
-			display: inline-block
-			width: 100% 
+		width: 100%
+	.fotorama-wrap
+		width: 80%
+		position: relative
+		left: 50%
+		transform: translateX(-50%)
 
 .call
 	position: relative
 	margin-top: 10rem
+	&-worker
+		width: 90%
 	.form
 		margin-top: 10rem
 		width: 54rem
@@ -474,7 +479,6 @@ body
 	margin-top: 10rem
 	&-slider
 		width: 80%
-		height: 30rem
 		margin: auto
 		margin-top: 9rem
 	&-caption
@@ -491,17 +495,17 @@ body
 		position: relative
 		display: inline-block
 		margin-top: 2rem
-		max-width: 27rem
+		width: 30%
 		border-radius: 50%
 	&-name
-		float: left
+		float: right
 		display: inline-block
 		font-size: 3rem
 		font-family: 'uni'
 		color: $black
 		font-weight: 700
 		margin-bottom: 2rem
-		margin-left: 2rem	
+		margin-right: 30%	
 	&-rew
 		float: right
 		display: inline-block
@@ -513,7 +517,7 @@ body
 		background-size: 100% 100%
 		padding: 2rem
 		height: 27rem
-		width: 60rem
+		width: 60%
 
 .step
 	margin-top: 14rem
@@ -524,8 +528,9 @@ body
 		left: 40%
 		width: 6rem
 		&-row2
-			left: 55%
+			left: 40%
 	&-block
+		margin: auto
 		width: 19rem
 		height: 35rem
 		&-arrow
@@ -556,15 +561,16 @@ body
 	.container
 		padding: 0
 	&-block
+		position: relative
 		width: 100%
-		height: 55rem
+		height: 58rem
 		background-color: rgba(255, 255, 255, 0.2)
-		padding: 5rem 0
+		padding: 5rem 2rem	
 	&-img
 		display: inline-block
 		padding: 7px
 		border: 4px solid #c0c0c0
-		width: 33rem
+		width: 90%
 		position: absolute
 		left: 50%	
 		transform: translateX(-50%)
@@ -605,9 +611,10 @@ body
 		text-align: center
 	
 	&-form
+
 		padding: 7rem 10rem
 		background: url(../img/question-form.png) center center no-repeat
-		height: 46rem
+		height: auto
 		input
 			border: 2px solid #827645
 			font-size: 2rem
@@ -615,15 +622,173 @@ body
 			height: 4rem
 			margin-bottom: 1.6rem
 	.copyright
-		margin-top: 5rem
+		position: relative
+		margin-top: 2rem
 		text-align: center
 		font-size: 2rem
 		font-family: 'light'
 
+// Стили форм
+.form-call
+	display: none
+	position: fixed
+	top: 0
+	width: 100vw
+	height: 100vh
+	z-index: 998
+	background-color: rgba(0,0,0, 0.9)
+	&-img
+		position: absolute
+		right: 5%
+		top: 5%
+	.form
+		padding-top: 5rem
+		height: auto
+		max-width: 50rem
+		position: fixed
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		z-index: 999
+	.btn
+
+.form-want
+	display: none
+	position: fixed
+	top: 0
+	width: 100vw
+	height: 100vh
+	z-index: 998
+	background-color: rgba(0,0,0, 0.9)
+	&-img
+		position: absolute
+		right: 5%
+		top: 5%
+	.form
+		padding-top: 5rem
+		height: auto
+		max-width: 50rem
+		position: fixed
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		z-index: 999
+	.btn
+
+.form-cost
+	display: none
+	position: fixed
+	top: 0
+	width: 100vw
+	height: 100vh
+	z-index: 998
+	background-color: rgba(0,0,0, 0.9)
+	&-img
+		position: absolute
+		right: 5%
+		top: 5%
+	.form
+		padding-top: 5rem
+		height: auto
+		max-width: 50rem
+		position: fixed
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		z-index: 999
+	.btn
+
 
 // Медиа-запросы
-//@import "media"
-
+@media (max-width: 1600px)
+	.advantage
+		margin-bottom: 23rem
+		&-wrap
+			width: 80%
+		.block
+			position: absolute
+			font-size: 2rem
+			color: $black
+			text-align: right
+			img
+				width: 20rem
+			div
+				font-size: 1.8rem
+				position: relative
+				top: -24rem
+				left: 27rem
+				height: 10rem
+				width: 30rem
+		.block-l
+			position: absolute
+			font-size: 2rem
+			font-family: 'light'
+			color: $white
+			text-align: left
+			img
+				width: 20rem
+			div
+				position: relative
+				top: -11rem	
+				left: -28rem
+				height: 10rem
+				width: 40rem
+		.block-1
+			top: 5rem
+			right: 45rem
+			div
+				font-size: 1.8rem
+				position: relative
+				top: -24rem
+				left: 20rem
+				height: 10rem
+				width: 30rem
+		.block-2
+			top: 17rem
+			right: 33rem
+		.block-3
+			top: 29rem
+			right: 21rem
+			div
+				top: -22rem
+				left: 22rem
+		.block-4
+			top: 41rem
+			right: 9rem
+			div
+				top: -20rem
+				left: 19rem
+				width: 23rem
+		.block-5
+			top: 17rem
+			left: 12rem
+			div
+				position: relative
+				top: -24rem	
+				left: -20rem
+				height: 10rem
+				width: 30rem
+		.block-6
+			top: 29rem
+			left: 24rem
+			div
+				top: -10rem
+				left: -29rem
+		.block-7
+			top: 41rem
+			left: 36rem
+			div
+				top: -6rem
+				left: -30rem
+		.block-8
+			top: 53rem
+			left: 48rem
+			div
+				top: -9rem
+				left: -32rem
+	.work
+		position: relative
+		top: -15rem
 @media (max-width: 1200px) 
 	html 
 		font-size: 9px
@@ -650,8 +815,111 @@ body
 	
 	.video
 		height: 45rem
-
+	.overlay_container img
+		position: absolute
+		top: 0
+		left: 0
+		width: 40vw
+		padding: 10px
+		-webkit-border-radius: 5px
+		-moz-border-radius: 5px
+	.work
+		position: relative
+		top: -15rem
+	.call
+		position: relative
+		top: -9rem
+	.advantage
+		&-caption
+			margin-left: 2rem
+		&-wrap
+			width: 75%
+		.block
+			position: absolute
+			font-size: 2rem
+			color: $black
+			text-align: right
+			img
+				width: 20rem
+			div
+				font-size: 1.8rem
+				position: relative
+				top: -24rem
+				left: 27rem
+				height: 10rem
+				width: 30rem
+		.block-l
+			position: absolute
+			font-size: 2rem
+			font-family: 'light'
+			color: $white
+			text-align: left
+			img
+				width: 20rem
+			div
+				position: relative
+				top: -11rem	
+				left: -28rem
+				height: 10rem
+				width: 40rem
+		.block-1
+			top: 3rem
+			right: 35rem
+			div
+				font-size: 1.8rem
+				position: relative
+				top: -24rem
+				left: 20rem
+				height: 10rem
+				width: 30rem
+		.block-2
+			top: 15rem
+			right: 23rem
+		.block-3
+			top: 27rem
+			right: 11rem
+			div
+				top: -22rem
+				left: 22rem
+		.block-4
+			top: 39rem
+			right: -1rem
+			div
+				top: -26rem
+				left: 12rem
+				width: 23rem
+		.block-5
+			top: 17rem
+			left: 12rem
+			div
+				position: relative
+				top: -24rem	
+				left: -20rem
+				height: 10rem
+				width: 30rem
+		.block-6
+			top: 29rem
+			left: 24rem
+			div
+				top: -10rem
+				left: -29rem
+		.block-7
+			top: 41rem
+			left: 36rem
+			div
+				top: -6rem
+				left: -30rem
+		.block-8
+			top: 53rem
+			left: 48rem
+			div
+				top: -9rem
+				left: -32rem
 @media (max-width: 992px) 
+	.work
+		top: 0
+	.call
+		top: 0
 	.main-advantage-paragraph 
 		font-size: 1.6rem
 		margin-left: 0rem
@@ -680,6 +948,99 @@ body
 		height: 36rem
 		iframe
 			width: 70%
+	.call-worker
+		width: 70%
+		position: relative
+		left: 35%
+		top: 15%
+	.call
+		margin-bottom: 30rem
+	.about
+		&-text
+			font-size: 2.3rem
+		&-block
+			width: 17rem
+			height: 22rem
+	.thanks
+		&-img
+			width: 30%
+			margin-top: 15%
+		&-rew
+			height: 25rem
+		&-name
+			margin-right: 20%
+	.step
+		&-block
+		&-arrow
+			left: -8%
+			&-row2
+				left: -8%
+	.sertificate-block
+		height: 40rem
+	.advantage
+		&-caption
+			color: $white
+		margin-bottom: 5rem
+		&-wrap
+			width: 75%
+			margin: auto
+		.block
+			position: absolute
+			font-size: 2rem
+			color: $black
+			text-align: right
+			img
+				width: 10rem
+			div
+				color: $white
+				text-align: center
+				font-size: 1.8rem
+				position: relative
+				top: 0
+				left: 35%
+				height: 10rem
+				width: 30rem
+		.block-l
+			position: absolute
+			font-size: 1.8rem
+			font-family: 'light'
+			color: $white
+			text-align: left
+			img
+
+				width: 10rem
+			div
+				font-size: 1.8rem
+				text-align: center
+				position: relative
+				top: 0	
+				left: -35%
+				height: 10rem
+				width: 40rem
+		.block-1
+			top: 3rem
+			right: 0rem
+		.block-2
+			top: 29rem
+			right: 0rem
+		.block-3
+			top: 52rem
+			right: 0rem
+		.block-4
+			top: 73rem
+			right: 0rem
+		.block-5
+			top: 3rem
+			left: 0rem
+		.block-6
+			top: 29rem
+			left: 0rem
+		.block-7
+			top: 52rem
+			left: 0rem
+		.block-8
+			top: 73rem
+			left: 0rem
 @media (max-width: 767px) 
 	.main-caption-block
 		width: 100%
@@ -710,6 +1071,9 @@ body
 		.btn
 			padding: 0.6rem 0.6rem
 			font-size: 1.4rem
+	.get_catalog
+		.form
+			padding: 2rem
 	.get_catalog-inform
 		background-size: 100% 100%
 		padding: 2rem
@@ -720,27 +1084,121 @@ body
 		width: 80%
 		margin: auto
 		margin-top: 0
+		padding: 1rem
 	.get_catalog-height
 		height: 35rem
 	.video
+		&-caption
+			color: $white
 		height: 36rem
 		iframe
 			width: 80%
+	.call-worker
+		display: none
+	.call
+		.form
+			width: 100%
+			margin: 5rem auto 0
+	.about
+		text-align: center
+		padding-top: 2rem
+		padding-bottom: 10rem
+		background-color: rgba(255,255,255, 0.7)
+		border-radius: 30px
+		margin-left: 2rem
+		margin-right: 2rem
+		height: auto
+		&-img
+			width: 100%
+		&-text
+			font-size: 3rem
+			width: 100%
+		&-caption
+			text-align: center
+			span
+				margin: auto
+		&-block
+			text-align: center
+			height: auto
+
+
+	.thanks
+		&-caption
+			color: $white
+		&-img
+			width: 24%
+			margin-top: 20%
+		&-rew
+			font-size: 1.8rem
+			width: 75%
+			height: 25rem
+		&-name
+			color: $white
+			margin-right: 20%
+	#arrow-del
+		display: inline-block
+	.step
+		background-color: rgba(0,0,0, 0.5)
+		border-radius: 30px
+		margin-left: 2rem
+		margin-right: 2rem
+		&-block
+			margin-top: 0
+			text-align: center
+			width: 100%
+			height: 32rem
+			&-arrow
+				height: 12rem
+				width: 100%
+				text-align: center
+			&-text
+				font-size: 2.4rem
+		&-arrow
+			left: 45%
+			transform: rotate(90deg) translateX(-50%)
+			&-row2
+				left: 45%
+				transform: rotate(90deg) translateX(-50%)
+	.sertificate
+		&-caption
+			background-color: rgba(0,0,0, 0.9)
+			border-radius: 10px
+	.sertificate-block
+		width: 100%
+		height: 180rem	
+	.blokimg
+		height: 60rem
+		img
+			width: 100%
+
+	.overlay_container img
+		position: absolute
+		top: 10rem
+		left: 0
+		width: 70vw
+		padding: 10px
+		-webkit-border-radius: 5px
+		-moz-border-radius: 5px
+	.p-null
+		padding: 0
 @media (max-width: 576px) 
 	.bg-1
 		display: none
+	.thanks
+		margin-top: 0
+		height: 40rem
 	.main-number
 		text-align: center
 		font-size: 2.6rem
 	.main 
 		background-size: auto 70%
 		text-align: center
+		.form
+			height: auto
 		.btn
 			font-size: 1.7rem
 	.main-advantage-paragraph
 		text-align: left
-		height: 100%
-	.main-advantage-form
 		height: 100%
 	
 	.catalog
@@ -756,9 +1214,74 @@ body
 			height: 95%
 			input
 				width: 100%
-
-
+	.prev 
+		left: -6rem
+	.next 
+		right: -6rem
+	.step-caption
+		margin-bottom: 4rem
+	.overlay_container img
+		display: none
+	.form
+		padding: 4rem 6rem
+		height: 40rem
+		input
+			width: 100%
+		textarea
+			width: 100%
+	.advantage
+		margin-bottom: 0
+		height: auto
+		&-wrap
+			margin-bottom: 0
+			height: auto
+			display: inline-block
+			width: 100%
+			text-align: center
+		&-caption
+			color: $white
+			margin-bottom: 5rem
+			width: 100%
+			right: 0
+		.block
+			display: inline-block
+			text-align: center
+			position: relative
+			width: 100%
+			margin-bottom: 2rem
+			top: 0
+			div
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				position: relative
+				text-align: center
+		.block-l
+			display: inline-block
+			text-align: center
+			position: relative
+			width: 100%
+			margin-bottom: 2rem
+			top: 0
+			div
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				position: relative
+				text-align: center
+			
+		.block-5
+			margin-bottom: 7rem
+	.work
+		margin-top: 0
+	.form
+		width: 100%
+		padding: 4rem
 @media (max-width: 490px) 
+	.prev 
+		left: -3rem
+	.next 
+		right: -3rem
 	.catalog
 		&-item
 			padding: 1.8rem
@@ -771,6 +1294,36 @@ body
 		height: 30rem
 		iframe
 			width: 90%
+	.work
+		margin-top: 3rem
+	.call
+		.form
+			input
+				width: 100%
+
+	.thanks
+		text-align: center
+		&-block
+			position: relative
+		&-img
+			margin: auto
+			float: none	
+			padding: 0
+		&-rew
+			font-size: 1.6rem
+			float: none
+			height: 100%
+		&-name
+			float: none
+			margin: 0
+			margin-bottom: 1rem
+	.sertificate-block
+		width: 100%
+		height: 155rem	
+	.blokimg
+		height: 50rem
+		img
+			width: 100%
 @media (max-width: 400px) 
 	.catalog
 		&-item
@@ -779,3 +1332,21 @@ body
 		.btn
 			padding: 1.4rem 0
 			font-size: 1.8rem
+
+	.call
+		.form
+			.btn
+				padding: 1rem
+	.video
+		margin-top: 5rem
+	.step
+		&-caption
+			font-size: 3rem
+		margin-top: 20rem
+	.advantage-caption
+		width: 90%
+		font-size: 3rem
+	.thanks
+		&-caption
+			font-size: 3rem
+

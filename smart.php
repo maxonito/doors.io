@@ -1,8 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Thank you!</title>
+	<!-- Custom styles for this template -->
+	<link href="css/style.css" rel="stylesheet">
+</head>
+	<body>
+	<div class="contain">
+		<div class="message">
+			Спасибо, что оставили заявку! <br>
+			В ближайшее время мы <br>
+			с Вами свяжемся
+		</div>
+		<div class="copyright">© 2018 Двери. All rights reserved.</div>
+	</div>
+	</body>
+</html>
+
 <?php 
 
 
 $name = $_POST['name'];
 $number = $_POST['number'];
+$info = $_POST['info'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -32,7 +54,8 @@ $mail->Subject = 'Новый заказ';
 $mail->Body    = '
 	Пользователь оставил свои данные <br><br> 
 	Имя: '.$name.' <br>
-	Номер: '.$number.' <br>'
+	Номер телефона: '.$number.' <br>
+	Номер двери, стоимость которой хотят узнать: '.$info.' <br>'
 	;
 	
 if(strlen($name) < 3) {
@@ -48,7 +71,7 @@ if(strlen($number) < 3) {
 if(!$mail->send()) {
     return false;
 } else {
-echo('<center><br><br><img src="http://www.pd4pic.com/images/tick-ok-check-correct-okay-confirm-icon-yes.png" alt="ок!" style="width: 200px;"></h1><br><h1>Спасибо за заявку!</h1><br><h2>Мы свяжемся с Вами в самое ближайшее время</h2></center><meta http-equiv="refresh" content="3; url=index.html">');
+echo('<meta http-equiv="refresh" content="3; url=index.html">');
 }
 
 ?>
