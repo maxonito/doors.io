@@ -96,7 +96,7 @@ body
 	height: 976rem
 .bg 
 	background: #111 url(../img/big-bg-compress.jpg) center bottom no-repeat
-	background-size: auto 978rem
+	background-size: auto 915rem
 .arrow 
 	position: absolute
 	z-index: 99
@@ -108,13 +108,13 @@ body
 	&:focus
 		outline: none
 .prev 
-	left: -10rem
+	left: 0
 	background: url(../img/left-arrow.png) center no-repeat
 	background-size: 100%
 	z-index: 99
 
 .next 
-	right: -10rem
+	right: 0
 	background: url(../img/right-arrow.png) center no-repeat
 	background-size: 100%
 	z-index: 1000
@@ -198,7 +198,6 @@ body
 	&-btn
 		font-size: 2rem
 		position: relative
-		top: -5rem
 	&-item
 		width: 100%
 		position: relative
@@ -210,7 +209,8 @@ body
 		height: 63rem
 		&-img
 			width: 100%
-			height: 100%
+			height: 90%
+			margin-bottom: 1rem
 	.container
 		position: relative
 		background-color: rgba(255, 255, 255, 0.3)
@@ -306,7 +306,7 @@ body
 
 .video
 	position: relative
-	height: 60rem
+	height: auto
 	iframe
 		position: absolute
 		left: 50%
@@ -418,7 +418,7 @@ body
 	.fotorama
 		width: 100%
 	.fotorama-wrap
-		width: 80%
+		width: 70%
 		position: relative
 		left: 50%
 		transform: translateX(-50%)
@@ -446,13 +446,14 @@ body
 			font-size: 2.8rem
 
 .about
-	margin-top: 20rem
+	margin-top: 30rem
+	margin-bottom: 33rem
 	position: relative
-	top: -20rem
+	top: -25rem
 	&-block
-		margin-top: 6rem
+		margin-bottom: 9rem
 		width: 25rem
-		height: 28rem
+		height: 25rem
 	&-text
 		display: inline-block
 		text-align: center
@@ -475,39 +476,37 @@ body
 
 .thanks
 	position: relative
-	top: -7rem
-	margin-top: 10rem
+	top: -13rem
+	margin-top: 0rem
 	&-slider
 		width: 80%
 		margin: auto
 		margin-top: 9rem
 	&-caption
+		color: $white
 		font-size: 4rem
 		font-weight: 400
 		font-family: 'souven'
 		text-transform: uppercase
 		text-align: center
 	&-block
+		text-align: center
 		&:focus
 			outline: none
-	&-img
-		float: left
-		position: relative
-		display: inline-block
-		margin-top: 2rem
-		width: 30%
-		border-radius: 50%
 	&-name
-		float: right
 		display: inline-block
 		font-size: 3rem
 		font-family: 'uni'
 		color: $black
 		font-weight: 700
-		margin-bottom: 2rem
-		margin-right: 30%	
+		width: 100%
+		text-align: left
+		margin-left: 15%
+		small
+			font-size: 1.4rem
+			ml
 	&-rew
-		float: right
+		text-align: left
 		display: inline-block
 		font-size: 2rem
 		font-family: 'light'
@@ -516,8 +515,8 @@ body
 		background:  url(../img/rew-block.png)center no-repeat
 		background-size: 100% 100%
 		padding: 2rem
-		height: 27rem
-		width: 60%
+		height: 24rem
+		width: 70%
 
 .step
 	margin-top: 14rem
@@ -556,6 +555,7 @@ body
 		margin-bottom: 11rem
 
 .sertificate
+	display: none
 	position: relative
 	margin-top: 10rem
 	.container
@@ -621,13 +621,27 @@ body
 			width: 37rem
 			height: 4rem
 			margin-bottom: 1.6rem
+	
+.footer
 	.copyright
 		position: relative
-		margin-top: 2rem
+		margin-bottom: 1rem
 		text-align: center
 		font-size: 2rem
 		font-family: 'light'
 
+	.create
+		color: $white
+		position: relative
+		margin-bottom: 1rem
+		text-align: center
+		font-size: 2rem
+		font-family: 'light'
+		a
+			text-decoration: none
+			color: $white
+			&:hover
+				color: darken($white, 5%)
 // Стили форм
 .form-call
 	display: none
@@ -789,10 +803,13 @@ body
 	.work
 		position: relative
 		top: -15rem
+	.bg
+		background-size: auto 917rem
 @media (max-width: 1200px) 
 	html 
 		font-size: 9px
-	
+	.bg
+		background-size: auto 893rem
 	.main-caption-block 
 		margin-top: 3rem
 	
@@ -814,7 +831,7 @@ body
 		width: 50%
 	
 	.video
-		height: 45rem
+		height: auto
 	.overlay_container img
 		position: absolute
 		top: 0
@@ -915,6 +932,13 @@ body
 			div
 				top: -9rem
 				left: -32rem
+	.about
+		top: -40rem
+		left: 2rem
+		margin-bottom: 0
+		&-block
+			height: 26rem
+			margin-bottom: 10rem
 @media (max-width: 992px) 
 	.work
 		top: 0
@@ -939,6 +963,8 @@ body
 			margin-top: 2rem
 		&-item
 			height: 40rem
+			&-img
+				margin-bottom: -1rem
 	
 	.get_catalog-book
 		width: 48rem
@@ -956,19 +982,25 @@ body
 	.call
 		margin-bottom: 30rem
 	.about
+		top: -20rem
 		&-text
 			font-size: 2.3rem
 		&-block
 			width: 17rem
 			height: 22rem
 	.thanks
-		&-img
-			width: 30%
-			margin-top: 15%
+		&-caption
+			background-color: rgba(0,0,0, 0.7)
+			border-radius: 10px
+		&-block
+			width: 100%
 		&-rew
+			width: 90%
 			height: 25rem
-		&-name
-			margin-right: 20%
+	.next
+		right: -3rem
+	.prev
+		left: -3.5rem
 	.step
 		&-block
 		&-arrow
@@ -979,7 +1011,7 @@ body
 		height: 40rem
 	.advantage
 		&-caption
-			color: $white
+		color: $black
 		margin-bottom: 5rem
 		&-wrap
 			width: 75%
@@ -1068,6 +1100,8 @@ body
 		&-item
 			padding: 2rem
 			height: 30rem
+			&-img
+				margin-bottom: -1.5rem
 		.btn
 			padding: 0.6rem 0.6rem
 			font-size: 1.4rem
@@ -1130,11 +1164,15 @@ body
 			margin-top: 20%
 		&-rew
 			font-size: 1.8rem
-			width: 75%
-			height: 25rem
+			width: 90%
+			height: 27rem
 		&-name
 			color: $white
-			margin-right: 20%
+			margin-left: 5%
+	.next
+		right: -5rem
+	.prev
+		left: -5rem
 	#arrow-del
 		display: inline-block
 	.step
@@ -1181,6 +1219,14 @@ body
 		-moz-border-radius: 5px
 	.p-null
 		padding: 0
+
+	.advantage
+		&-caption
+			color: $white
+	.bg
+		background-size: auto 800rem
+	.question-caption
+		color: $white
 @media (max-width: 576px) 
 	.bg-1
 		display: none
@@ -1204,11 +1250,13 @@ body
 	.catalog
 		&-item
 			height: 47rem
-			padding: 4rem
+			padding: 3rem 5rem
+			padding-bottom: 4rem
+			&-img
+				margin-bottom: -1.2rem
 		.btn
 			padding: 2rem
 			font-size: 2rem
-			top: -6rem
 	.get_catalog
 		.form
 			height: 95%
@@ -1286,10 +1334,12 @@ body
 		&-item
 			padding: 1.8rem
 			height: 44rem
+			&-img
+				height: 80%
+				width: 80%
 		.btn
-			padding: 1.4rem 0
+			padding: 2rem 0
 			font-size: 1.8rem
-			top: -7rem
 	.video
 		height: 30rem
 		iframe
@@ -1312,11 +1362,16 @@ body
 		&-rew
 			font-size: 1.6rem
 			float: none
-			height: 100%
+			height: 28rem
 		&-name
 			float: none
 			margin: 0
 			margin-bottom: 1rem
+	.next
+		right: -4rem
+	.prev
+		left: -4rem
+
 	.sertificate-block
 		width: 100%
 		height: 155rem	
@@ -1347,6 +1402,14 @@ body
 		width: 90%
 		font-size: 3rem
 	.thanks
+		&-name
+			font-size: 2rem
+			small
+
+		&-rew
+			width: 95%
+			padding: 1rem
+			height: 29rem
 		&-caption
 			font-size: 3rem
 
