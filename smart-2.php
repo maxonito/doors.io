@@ -41,7 +41,7 @@ $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
 $mail->Port = 465;                                    // TCP port to connect to
  
 $mail->setFrom('glass-gun@mail.ru', '');   // От кого письмо 
-$mail->addAddress('Shumlianskiia@gmail.com');     // Add a recipient
+$mail->addAddress('veruchka93@gmail.com');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -76,7 +76,7 @@ if(strlen($text) < 6) {
 if(!$mail->send()) {
     return false;
 } else {
-echo('<center><br><br><img src="http://www.pd4pic.com/images/tick-ok-check-correct-okay-confirm-icon-yes.png" alt="ок!" style="width: 200px;"></h1><br><h1>Спасибо за Ваш вопрос!</h1><br><h2>Мы свяжемся с Вами в самое ближайшее время</h2></center><meta http-equiv="refresh" content="3; url=index.html">');
+echo('<meta http-equiv="refresh" content="3; url=index.html">');
 }
 
 ?>
